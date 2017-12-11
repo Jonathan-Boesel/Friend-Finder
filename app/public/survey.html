@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Friend Finder</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>;
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</head>
+
+<div class=container>
+	<!--Header-->
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<h2>Survey Questions</h2>
+			<hr>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	<!--User Info Input-->
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<h3><strong>Your Info</strong></h3>
+			<h4>Your name</h4>
+			<input type="text" id="name" class="form-control" required>
+			<h4>Link to your picture</h4>
+			<input type="text" id="picture" class="form-control" required="">
+			<hr>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+	<!--Survey Questions-->
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<div class="form-group"></div>
+			<h3><strong>Qustion 1</strong></h3>
+			<h4>This is a question?</h4>
+			<div class="dropdown dd1">
+				<button class="btn btn-default dropdown-toggle" data-answer="s" type="button" id="q1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select Option
+                        <span class="caret"> </span>
+              	</button>
+				<ul class="dropdown-menu" aria-labelledby="q1">
+					<li>
+						<a href="#" data-value="1" class="q">1 (Strongly disagree)</a>
+					</li>
+					<li>
+						<a href="#" data-value="2" class="q">2</a>
+					</li>
+					<li>
+						<a href="#" data-value="3" class="q">3</a>
+					</li>
+					<li>
+						<a href="#" data-value="4" class="q">4</a>
+					</li>
+					<li>
+						<a href="#" data-value="5" class="q">5 (Strongly agree)</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="form-group"></div>
+			<h3><strong>Qustion 2</strong></h3>
+			<h4>This is a question 2?</h4>
+			<div class="dropdown dd1">
+				<button class="btn btn-default dropdown-toggle" data-answer="1" type="button" id="q2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select Option
+                        <span class="caret"> </span>
+              	</button>
+				<ul class="dropdown-menu" aria-labelledby="q2">
+					<li>
+						<a href="#" data-value="1" class="q">1 (Strongly disagree)</a>
+					</li>
+					<li>
+						<a href="#" data-value="2" class="q">2</a>
+					</li>
+					<li>
+						<a href="#" data-value="3" class="q">3</a>
+					</li>
+					<li>
+						<a href="#" data-value="4" class="q">4</a>
+					</li>
+					<li>
+						<a href="#" data-value="5" class="q">5 (Strongly agree)</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="form-group"></div>
+			<h3><strong>Qustion 3</strong></h3>
+			<h4>This is a question 3?</h4>
+			<div class="dropdown dd1">
+				<button class="btn btn-default dropdown-toggle" data-answer="1" type="button" id="q3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select Option
+                        <span class="caret"> </span>
+              	</button>
+				<ul class="dropdown-menu" aria-labelledby="q3">
+					<li>
+						<a href="#" data-value="1" class="q">1 (Strongly disagree)</a>
+					</li>
+					<li>
+						<a href="#" data-value="2" class="q">2</a>
+					</li>
+					<li>
+						<a href="#" data-value="3" class="q">3</a>
+					</li>
+					<li>
+						<a href="#" data-value="4" class="q">4</a>
+					</li>
+					<li>
+						<a href="#" data-value="5" class="q">5 (Strongly agree)</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="form-group"></div>
+			<h3><strong>Qustion 4</strong></h3>
+			<h4>This is a question 4?</h4>
+			<div class="dropdown dd1">
+				<button class="btn btn-default dropdown-toggle" data-answer="1" type="button" id="q4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select Option
+                        <span class="caret"> </span>
+              	</button>
+				<ul class="dropdown-menu" aria-labelledby="q4">
+					<li>
+						<a href="#" data-value="1" class="q">1 (Strongly disagree)</a>
+					</li>
+					<li>
+						<a href="#" data-value="2" class="q">2</a>
+					</li>
+					<li>
+						<a href="#" data-value="3" class="q">3</a>
+					</li>
+					<li>
+						<a href="#" data-value="4" class="q">4</a>
+					</li>
+					<li>
+						<a href="#" data-value="5" class="q">5 (Strongly agree)</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="form-group"></div>
+			<h3><strong>Qustion 5</strong></h3>
+			<h4>This is a question 5?</h4>
+			<div class="dropdown dd1">
+				<button class="btn btn-default dropdown-toggle" data-answer="1" type="button" id="q5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select Option
+                        <span class="caret"> </span>
+              	</button>
+				<ul class="dropdown-menu" aria-labelledby="q5">
+					<li>
+						<a href="#" data-value="1" class="q">1 (Strongly disagree)</a>
+					</li>
+					<li>
+						<a href="#" data-value="2" class="q">2</a>
+					</li>
+					<li>
+						<a href="#" data-value="3" class="q">3</a>
+					</li>
+					<li>
+						<a href="#" data-value="4" class="q">4</a>
+					</li>
+					<li>
+						<a href="#" data-value="5" class="q">5 (Strongly agree)</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="form-group"></div>
+			<h3><strong>Qustion 6</strong></h3>
+			<h4>This is a question 6?</h4>
+			<div class="dropdown dd1">
+				<button class="btn btn-default dropdown-toggle" data-answer="1" type="button" id="q6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select Option
+                        <span class="caret"> </span>
+              	</button>
+				<ul class="dropdown-menu" aria-labelledby="q6">
+					<li>
+						<a href="#" data-value="1" class="q">1 (Strongly disagree)</a>
+					</li>
+					<li>
+						<a href="#" data-value="2" class="q">2</a>
+					</li>
+					<li>
+						<a href="#" data-value="3" class="q">3</a>
+					</li>
+					<li>
+						<a href="#" data-value="4" class="q">4</a>
+					</li>
+					<li>
+						<a href="#" data-value="5" class="q">5 (Strongly agree)</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="form-group"></div>
+			<h3><strong>Qustion 7</strong></h3>
+			<h4>This is a question 7?</h4>
+			<div class="dropdown dd1">
+				<button class="btn btn-default dropdown-toggle" data-answer="1" type="button" id="q7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select Option
+                        <span class="caret"> </span>
+              	</button>
+				<ul class="dropdown-menu" aria-labelledby="q7">
+					<li>
+						<a href="#" data-value="1" class="q">1 (Strongly disagree)</a>
+					</li>
+					<li>
+						<a href="#" data-value="2" class="q">2</a>
+					</li>
+					<li>
+						<a href="#" data-value="3" class="q">3</a>
+					</li>
+					<li>
+						<a href="#" data-value="4" class="q">4</a>
+					</li>
+					<li>
+						<a href="#" data-value="5" class="q">5 (Strongly agree)</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="form-group"></div>
+			<h3><strong>Qustion 8</strong></h3>
+			<h4>This is a question 8?</h4>
+			<div class="dropdown dd1">
+				<button class="btn btn-default dropdown-toggle" data-answer="1" type="button" id="q8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select Option
+                        <span class="caret"> </span>
+              	</button>
+				<ul class="dropdown-menu" aria-labelledby="q8">
+					<li>
+						<a href="#" data-value="1" class="q">1 (Strongly disagree)</a>
+					</li>
+					<li>
+						<a href="#" data-value="2" class="q">2</a>
+					</li>
+					<li>
+						<a href="#" data-value="3" class="q">3</a>
+					</li>
+					<li>
+						<a href="#" data-value="4" class="q">4</a>
+					</li>
+					<li>
+						<a href="#" data-value="5" class="q">5 (Strongly agree)</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="form-group"></div>
+			<h3><strong>Qustion 9</strong></h3>
+			<h4>This is a question 9?</h4>
+			<div class="dropdown dd1">
+				<button class="btn btn-default dropdown-toggle" data-answer="1" type="button" id="q9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select Option
+                        <span class="caret"> </span>
+              	</button>
+				<ul class="dropdown-menu" aria-labelledby="q9">
+					<li>
+						<a href="#" data-value="1" class="q">1 (Strongly disagree)</a>
+					</li>
+					<li>
+						<a href="#" data-value="2" class="q">2</a>
+					</li>
+					<li>
+						<a href="#" data-value="3" class="q">3</a>
+					</li>
+					<li>
+						<a href="#" data-value="4" class="q">4</a>
+					</li>
+					<li>
+						<a href="#" data-value="5" class="q">5 (Strongly agree)</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="form-group"></div>
+			<h3><strong>Qustion 10</strong></h3>
+			<h4>This is a question 10?</h4>
+			<div class="dropdown dd1">
+				<button class="btn btn-default dropdown-toggle" data-answer="1" type="button" id="q10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select Option
+                        <span class="caret"> </span>
+              	</button>
+				<ul class="dropdown-menu" aria-labelledby="q10">
+					<li>
+						<a href="#" data-value="1" class="q">1 (Strongly disagree)</a>
+					</li>
+					<li>
+						<a href="#" data-value="2" class="q">2</a>
+					</li>
+					<li>
+						<a href="#" data-value="3" class="q">3</a>
+					</li>
+					<li>
+						<a href="#" data-value="4" class="q">4</a>
+					</li>
+					<li>
+						<a href="#" data-value="5" class="q">5 (Strongly agree)</a>
+					</li>
+				</ul>
+			</div>
+
+			<button class="btn btn-primary" id="submit" type="submit">Submit</button><span id="message"></span></div>
+	</div>
+	<div class="col-md-1"></div>
+</div>
+<script>
+	var answerArr = []
+
+	$(".q").click(function() {
+		event.preventDefault();
+		// Replace dropdown text with selection
+		$(this.parentElement.parentElement.previousSibling.previousSibling.previousSibling).text($(this).text());
+		// Change data value to user selection
+		$(this.parentElement.parentElement.previousSibling.previousSibling.previousSibling).data("answer", ($(this).data("value")))
+		console.log(this.parentElement.parentElement.previousSibling.previousSibling.previousSibling.textContent)
+	});
+
+
+	$("#submit").on("click", function() {
+		console.log($("#name").val())
+		console.log($("#picture").val())
+		console.log($("#q1").data("answer"))
+		console.log($("#q2").data("answer"))
+		console.log($("#q4").data("answer"))
+		console.log($("#q5").data("answer"))
+		console.log($("#q6").data("answer"))
+		console.log($("#q7").data("answer"))
+		console.log($("#q8").data("answer"))
+		console.log($("#q9").data("answer"))
+		console.log($("#q10").data("answer"))
+	})
+</script>
+
+</html>
