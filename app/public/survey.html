@@ -41,7 +41,7 @@
 			<h3><strong>Qustion 1</strong></h3>
 			<h4>This is a question?</h4>
 			<div class="dropdown dd1">
-				<button class="btn btn-default dropdown-toggle" data-answer="s" type="button" id="q1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				<button class="btn btn-default dropdown-toggle" data-answer="1" type="button" id="q1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         Select Option
                         <span class="caret"> </span>
               	</button>
@@ -311,32 +311,51 @@
 	</div>
 	<div class="col-md-1"></div>
 </div>
+<script src="../routing/apiRoutes.js"></script>
 <script>
-	var answerArr = []
-
+	/* global $ */
 	$(".q").click(function() {
 		event.preventDefault();
 		// Replace dropdown text with selection
 		$(this.parentElement.parentElement.previousSibling.previousSibling.previousSibling).text($(this).text());
 		// Change data value to user selection
-		$(this.parentElement.parentElement.previousSibling.previousSibling.previousSibling).data("answer", ($(this).data("value")))
-		console.log(this.parentElement.parentElement.previousSibling.previousSibling.previousSibling.textContent)
+		$(this.parentElement.parentElement.previousSibling.previousSibling.previousSibling).data("answer", ($(this).data("value")));
+		console.log(this.parentElement.parentElement.previousSibling.previousSibling.previousSibling.textContent);
 	});
 
 
 	$("#submit").on("click", function() {
-		console.log($("#name").val())
-		console.log($("#picture").val())
-		console.log($("#q1").data("answer"))
-		console.log($("#q2").data("answer"))
-		console.log($("#q4").data("answer"))
-		console.log($("#q5").data("answer"))
-		console.log($("#q6").data("answer"))
-		console.log($("#q7").data("answer"))
-		console.log($("#q8").data("answer"))
-		console.log($("#q9").data("answer"))
-		console.log($("#q10").data("answer"))
-	})
+		var userInput = {
+			name: $("#name").val(),
+			picture: $("#picture").val(),
+			scores: [
+				$("#q1").data("answer"),
+				$("#q2").data("answer"),
+				$("#q3").data("answer"),
+				$("#q4").data("answer"),
+				$("#q5").data("answer"),
+				$("#q6").data("answer"),
+				$("#q7").data("answer"),
+				$("#q8").data("answer"),
+				$("#q9").data("answer"),
+				$("#q10").data("answer")
+			]
+		};
+		console.log(userInput)
+		$.ajax({ type: "POST", url: "/api/friends", data: userInput, traditional: true })
+			.done(function(data) {
+				console.log(data);
+				console.log("TEST");
+				alert("TEST");
+			});
+
+		// $.post("/api/friends", userInput)
+		// 	.done(function(data) {
+		// 		console.log(data);
+		// 		console.log("TEST");
+		// 		alert("TEST");
+		// 	});
+	});
 </script>
 
 </html>
