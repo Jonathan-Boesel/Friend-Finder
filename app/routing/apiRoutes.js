@@ -59,6 +59,11 @@ function apiRoutes(app, path) {
 			}
 		}
 		console.log(index)
+		var data = friends[index]
+
+		res.send(data)
+		// res.status(200).send(data)
+		// res.json(data)
 
 
 	});

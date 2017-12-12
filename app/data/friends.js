@@ -15,7 +15,7 @@ var friends = [{
 	]
 }, {
 	"name": "Paul",
-	"photo": "https://www.pexels.com/photo/man-young-happy-smiling-91227/",
+	"photo": "https://static.pexels.com/photos/91227/pexels-photo-91227.jpeg",
 	"scores": [
 		3,
 		4,
